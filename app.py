@@ -16,21 +16,21 @@ from llama_lora.ui.css_styles import get_css_styles
 
 
 def main(
-    base_model: Union[str, None] = None,
-    data_dir: Union[str, None] = None,
+    base_model: Union[str, None] = 'decapoda-research/llama-7b-hf',
+    data_dir: Union[str, None] = './data',
     base_model_choices: Union[str, None] = None,
     trust_remote_code: Union[bool, None] = None,
     server_name: str = "127.0.0.1",
-    share: bool = False,
+    share: bool = True,
     skip_loading_base_model: bool = False,
     auth: Union[str, None] = None,
-    load_8bit: Union[bool, None] = None,
+    load_8bit: Union[bool, None] = True,
     ui_show_sys_info: Union[bool, None] = None,
     ui_dev_mode: Union[bool, None] = None,
     wandb_api_key: Union[str, None] = None,
     wandb_project: Union[str, None] = None,
     hf_access_token: Union[str, None] = None,
-    timezone: Union[str, None] = None,
+    timezone: Union[str, None] = 'America/Los_Angeles',
     config: Union[str, None] = None,
 ):
     '''
